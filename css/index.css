@@ -9,7 +9,7 @@
 .jd_header{
 	height: 40px;
 	width: 100%;
-	background-color: rgb(201, 21, 35);
+	/* background-color: rgb(201, 21, 35); */
 	/* 要固定在顶部 所以 改为 fixed */
 	position: fixed;
 	z-index: 99;
@@ -17,6 +17,9 @@
 	/* 设置pading 把input 挤进去 */
 	padding-left: 70px;
 	padding-right: 60px;
+
+	/* 默认是透明的 所以 添加a为0 */
+	background-color: rgba(201, 21, 35,0);
 }
 .jd_header .header_logo{
 	width: 60px;
@@ -76,6 +79,9 @@
 	/* 10倍宽度 为了 在横向 放10张图片 */
 	width: 1000%;
 	/* 1000px */
+
+	/* 默认 移动个一个 屏幕的宽度 注意是负数 */
+	transform: translateX(-10%);
 }
 
 .jd_banner .banner_images li{
@@ -114,7 +120,7 @@
 	注意 .current 不能 空格
  */
 .jd_banner .banner_index li.current{
-	background-color: white;
+	background-color: black;
 }
 
 
